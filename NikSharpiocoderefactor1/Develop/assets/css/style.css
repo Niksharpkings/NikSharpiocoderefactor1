@@ -2,56 +2,75 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: #d9dcd6;
-}
-
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    text-decoration: none; /*added text=decoration and family font*/
+        /*fixed calibri to 'calibri' */
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+header { /*removed the "." from header*/
+    padding: 20px 35px; /*added 35px after 20px*/
+    background-color: #2a607c;
 }
 
+header h1 { /*removed the "." from header h1*/
+    /*removed -block from inline*/
+    display: inline;
+    font-size: 46px;
+    /*added font-weight: bold*/
+    font-weight: bold;
+    /*added font=color*/
+    /*Added margin: 0*/
+    margin: 0;
+}
+
+/*added header a*/
+
+ /*deactivated
 .header h1 .seo {
     color: #d9dcd6;
-}
+}*/
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
+/* changed .header div to header nav*/
+header nav {
+ /*    padding-top: 15px;
+    margin-right: 20px;*/
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    /*added margin: 7px 0*/
+    margin: 30px 0;
+    /*removed font-size */
 }
-
+/* Deactivated
 .header div ul {
     list-style-type: none;
 }
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+*/
+/*Changed div to nav*/
+header nav ul li {
+    display: inline;
+    /*removed inline-block to inline & removed
+    margin-left: 25px;*/
 }
-
+header nav ul li a {
+    /*removed color*/
+    margin: 0 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+ /*removed p element*/
+/* Deactivated moved to header nav ul li a
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+*/
+/* Deactivated moved to header nav ul li p
 p {
     font-size: 16px;
-}
+}*/
 
 .hero {
-    height: 800px;
+    height: 700px; /*changed to 800px to 700px so viewer can see that there is more info below to*/
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -76,29 +95,26 @@ p {
 }
 
 .benefits {
+    margin-bottom: 25px;
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 .benefit-lead h3 {
@@ -132,33 +148,26 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
+}/* removed font-family*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
-
+/* removed font-family*/
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
-
+/* removed font-family*/
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
 
 .search-engine-optimization img {
@@ -175,23 +184,28 @@ p {
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 40px; /*changed font-size to 40px and text=align to center*/
+    text-align: center;
 }
 
 .online-reputation-management h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 40px; /*changed font-size to 40px and text=align to center*/
+    text-align: center;
 }
 
 .social-media-marketing h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 40px; /*changed font-size to 40px and text=align to center*/
+    text-align: center;
 }
 
 .footer {
+    background-color: #0072bb;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    margin-bottom: 30px; /*add margin-bottom to 30px */
 }
 
 .footer h2 {
@@ -202,3 +216,5 @@ p {
 footer h2 div {
     text-align: center;
   }
+
+  
